@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LayoutWrapper from "@/components/layout-helper/LayoutWrapper";
+import { Manrope, Mukta, Rozha_One } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
   subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mukta = Mukta({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mukta",
+});
+
+const rozha = Rozha_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-rozha",
 });
 
 export const metadata: Metadata = {
@@ -22,12 +31,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${mukta.variable} ${rozha.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#0D0D0D] text-[#F5F1EB] bg-dot-pattern">
+        <LayoutWrapper>
+        <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.1] noise" />
+          {children}
+        </LayoutWrapper>
+        </body>
     </html>
   );
 }
