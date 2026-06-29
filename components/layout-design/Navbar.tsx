@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header 
+      <header
         className={`fixed top-0 z-50 w-full transition-all duration-500 ${
           scrolled 
             ? "border-b border-white/5 bg-[#0D0D0D]/70 backdrop-blur-2xl shadow-[0_4px_30px_rgba(0,0,0,0.5)] py-2" 
