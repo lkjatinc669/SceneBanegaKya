@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 const StatsComponent = () => {
   return (
     <section className="relative border-y border-white/5 py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay pointer-events-none" />
+      <div className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" />
       <div className="absolute left-0 top-0 w-full h-full bg-linear-to-b from-transparent via-[#E07A4F]/5 to-transparent pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10 relative z-10">
