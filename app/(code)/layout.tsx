@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import {manrope, mukta, rozha} from "@/fonts/fonts";
 import "./globals.css";
 import PremiumNavbar from "@/components/layout-design/Navbar";
 import PremiumFooter from "@/components/layout-design/Footer";
 import LayoutWrapper from "@/components/layout-helper/LayoutWrapper";
 import PageTransition from "@/components/PageTransition";
 import Cursor from "@/components/common/Cursor";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "SceneBanegaKya - Premium Agency",
@@ -32,7 +23,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${mukta.variable} ${rozha.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#0D0D0D] text-[#F5F1EB] bg-dot-pattern">
         <LayoutWrapper>

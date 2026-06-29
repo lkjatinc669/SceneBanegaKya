@@ -1,0 +1,20 @@
+import { Manrope, Mukta, Rozha_One } from "next/font/google";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
+
+const mukta = Mukta({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-mukta",
+});
+
+const rozha = Rozha_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-rozha",
+});
+
+export {manrope, mukta, rozha}
