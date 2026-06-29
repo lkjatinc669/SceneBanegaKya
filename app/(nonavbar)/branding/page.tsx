@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import TypographyShowcase from "./Typography";
+import Navbar from "./NavBar";
 
 const ACCESS_CODE = "252525"
 
@@ -89,6 +90,8 @@ export default function BrandingPage() {
     }
     return (
 
+        <>
+        <Navbar />
         <main className="bg-[#0D0D0D] text-[#F5F1EB]">
             {/* Hero */}
             <section className="mx-auto max-w-7xl px-6 py-32">
@@ -356,8 +359,8 @@ export default function BrandingPage() {
                         "Human",
                     ].map((item) => (
                         <div
-                            key={item}
-                            className="rounded-3xl border border-white/5 bg-white/3 p-8"
+                        key={item}
+                        className="rounded-3xl border border-white/5 bg-white/3 p-8"
                         >
                             <h3 className="text-2xl font-semibold">{item}</h3>
                         </div>
@@ -396,5 +399,6 @@ export default function BrandingPage() {
                 </div>
             </section>
         </main>
+                            </>
     );
 }

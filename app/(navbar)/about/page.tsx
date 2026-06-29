@@ -12,11 +12,10 @@ import ContactCTA from "@/components/common/ContactCTA";
 
 
 export default function AboutPage() {
-  const loadingComplete = useLoading()
   return (
     <main>
 
-      <Hero loadingComplete={loadingComplete} />
+      <Hero />
 
       <OurStory />
 

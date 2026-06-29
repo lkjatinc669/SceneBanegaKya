@@ -48,7 +48,7 @@ export default function HomePage() {
           <div className="max-w-5xl">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={loadingComplete ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="inline-flex items-center gap-2 rounded-full border border-white/10 glass-card px-5 py-2.5 text-sm text-[#B9B4AD] shadow-[0_0_15px_rgba(224,122,79,0.15)] glow-hover"
             >
@@ -56,7 +56,7 @@ export default function HomePage() {
               <span className="tracking-wide">Premium Graphics & Video Production Agency</span>
             </motion.div>
 
-            <div className="mt-10 overflow-hidden">
+            {/* <div className="mt-10 overflow-hidden">
               {[
                 "We Create",
                 "Visual Stories",
@@ -65,7 +65,7 @@ export default function HomePage() {
                 <div key={line} className="overflow-hidden">
                   <motion.div
                     initial={{ y: "110%" }}
-                    animate={loadingComplete ? { y: "0%" } : { y: "110%" }}
+                    animate={{ y: "0%" } }
                     transition={{
                       duration: 1.2,
                       delay: i * 0.15,
@@ -77,11 +77,20 @@ export default function HomePage() {
                   </motion.div>
                 </div>
               ))}
-            </div>
+            </div> */}
+
+            <h1 className="text-xl leading-[1.3] tracking-[-0.06em] md:text-8xl lg:text-[4rem] line">
+
+              <span>अब्बू कहते थे,</span><br/>
+              <span>जो <span>{" "}</span>दीखता है वो बिकता है पर जो याद रहता  है</span><br/>
+              <span className="block text-right">वही {" "} <span className="text-[#E07A4F]">BRAND</span> बनता है</span>
+            
+            <br />
+          </h1>
 
             <motion.p
               initial={{ opacity: 0, y: 25 }}
-              animate={loadingComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mt-10 max-w-2xl text-xl leading-relaxed text-[#B9B4AD] font-light"
             >

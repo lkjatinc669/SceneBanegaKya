@@ -5,12 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import navItems from "./NavItems";
+import { SceneLogo } from "./Logo";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -31,11 +33,8 @@ export default function Navbar() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-10">
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-3">
-            <div className="h-3 w-3 rounded-full bg-[#E07A4F] shadow-[0_0_10px_rgba(224,122,79,0.5)] transition-transform group-hover:scale-110" />
 
-            <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#F5F1EB] transition-colors group-hover:text-white">
-              SceneBanegaKya
-            </span>
+            <SceneLogo logoSrc={"/logo.png"} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,13 +58,6 @@ export default function Navbar() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4">
-            <motion.button
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className="hidden md:block rounded-full border border-[#E07A4F]/30 bg-[#E07A4F]/10 px-6 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:border-[#E07A4F]/60 hover:bg-[#E07A4F]/20 hover:shadow-[0_0_20px_rgba(224,122,79,0.3)]"
-            >
-              Start Project
-            </motion.button>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

@@ -61,6 +61,10 @@
   font-family: var(--font-hindi);
 }
 
+.font-main{
+  font-family: var(--font-henny-penny);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Theme */
