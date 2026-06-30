@@ -10,9 +10,7 @@ export default function LayoutWrapper({ children }: {children: React.ReactNode})
   return (
     <LoadingContext.Provider value={loadingComplete}>
       {!loadingComplete && (
-        <LoadingScreen
-          onComplete={() => setLoadingComplete(true)}
-        />
+        <LoadingScreen/>
       )}
 
       {children}
