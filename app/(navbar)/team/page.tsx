@@ -18,7 +18,7 @@ const teamMembers = [
     }, {
         "name": "Umesh Tank",
         "role": "Founder, Creative Director & Video Editor",
-        "image": "/team/umesh-tank.jpg",
+        "image": "/team/umesh-tank.png",
         "description": "Leads the creative vision of every project, blending strategy, storytelling, and editing expertise. Passionate about building memorable brand narratives and delivering polished, high-impact visual experiences."
     }, {
         "name": "Vivek Chauhan",
