@@ -84,7 +84,7 @@ export default function ContactPage() {
 
                   <div>
                     <p className="text-sm text-[#B9B4AD]">Phone</p>
-                    <p className="mt-1 font-medium">+91 98765 43210</p>
+                    <p className="mt-1 font-medium">+91 76009 68949</p>
                   </div>
                 </div>
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm text-[#B9B4AD]">Location</p>
                     <p className="mt-1 font-medium">
-                      Mumbai, Maharashtra, India
+                      Botad, Gujarat, India
                     </p>
                   </div>
                 </div>
