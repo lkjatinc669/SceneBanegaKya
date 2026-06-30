@@ -9,6 +9,7 @@ import {
   FaDribbble,
   FaLinkedin,
 } from "react-icons/fa6";
+import SceneLogo from "./Logo";
 
 export default function PremiumFooter() {
   const ref = useRef(null);
@@ -23,7 +24,7 @@ export default function PremiumFooter() {
           scale: [1, 1.2, 1],
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute left-1/2 -top-20 h-[800px] w-[800px] -translate-x-1/2 rounded-full bg-gradient-to-r from-[#E07A4F]/10 to-[#ff9e75]/5 blur-[120px] pointer-events-none" 
+        className="absolute left-1/2 -top-20 h-200 w-200 -translate-x-1/2 rounded-full bg-linear-to-r from-[#E07A4F]/10 to-[#ff9e75]/5 blur-[120px] pointer-events-none" 
       />
       <div className="absolute inset-0 bg-dot-pattern opacity-10 mix-blend-overlay pointer-events-none" />
 
@@ -38,10 +39,7 @@ export default function PremiumFooter() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className="mb-6 flex items-center gap-3">
-              <div className="h-3.5 w-3.5 rounded-full bg-[#E07A4F] shadow-[0_0_15px_rgba(224,122,79,0.6)]" />
-              <span className="text-sm font-bold uppercase tracking-[0.25em] text-white">
-                SceneBanegaKya
-              </span>
+              <SceneLogo logoSrc={"/logo.svg"} />
             </div>
 
             <p className="max-w-sm leading-relaxed text-[#B9B4AD] font-light">

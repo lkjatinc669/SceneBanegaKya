@@ -10,22 +10,41 @@ import {
 import ContactCTA from "@/components/common/ContactCTA";
 
 const teamMembers = [
-    {
-        "name": "Jatin Gohil",
-        "role": "Cinematographer, Script-Writer & Colorist",
-        "image": "/team/jatin-gohil.jpg",
-        "description": "Transforms ideas into visually compelling stories through cinematic framing, narrative structure, and immersive color grading. Focused on crafting emotionally resonant visuals that leave a lasting impact."
-    }, {
-        "name": "Umesh Tank",
-        "role": "Founder, Creative Director & Video Editor",
-        "image": "/team/umesh-tank.png",
-        "description": "Leads the creative vision of every project, blending strategy, storytelling, and editing expertise. Passionate about building memorable brand narratives and delivering polished, high-impact visual experiences."
-    }, {
-        "name": "Vivek Chauhan",
-        "role": "Reel Editor & Short-Form Content Specialist",
-        "image": "/team/vivek-chauhan.jpg",
-        "description": "Specializes in creating fast-paced, engaging short-form content optimized for modern audiences. Skilled at transforming raw footage into scroll-stopping reels that maximize reach and retention."
-    }
+  {
+    name: "Jatin Gohil",
+    role: "Cinematographer, Scriptwriter & Colorist",
+    image: "/team/jatin-gohil.jpg",
+    description:
+      "Brings stories to life through cinematic visuals, purposeful direction, and precision color grading. Passionate about crafting emotionally engaging films that blend aesthetics with impactful storytelling."
+  },
+  {
+    name: "Umesh Tank",
+    role: "Founder, Creative Director & Lead Video Editor",
+    image: "/team/umesh-tank.png",
+    description:
+      "Drives the creative vision behind every project, combining strategy, storytelling, and premium post-production. Dedicated to building powerful brand identities through cinematic editing and innovative visual experiences."
+  },
+  {
+    name: "Vivek Chauhan",
+    role: "Reel Editor & Short-Form Content Specialist",
+    image: "/team/vivek-chauhan.jpg",
+    description:
+      "Creates high-performing short-form content designed to capture attention within seconds. Expert in fast-paced editing, engaging hooks, and platform-focused storytelling that maximizes audience retention."
+  },
+  {
+    name: "Darshil Parmar",
+    role: "Video Editor & Short-Form Content Specialist",
+    image: "/team/darshil-parmar.jpg",
+    description:
+      "Transforms raw footage into polished, dynamic edits with seamless transitions, cinematic pacing, and compelling visual flow. Focused on delivering content that keeps viewers engaged from start to finish."
+  },
+  {
+    name: "Tarun Kasodariya",
+    role: "Graphic Designer & Brand Identity Specialist",
+    image: "/team/tarun-kasodariya.jpg",
+    description:
+      "Designs modern visual identities that communicate clarity, creativity, and purpose. Specializes in branding, social media creatives, and premium marketing designs that elevate brands with clean, impactful aesthetics."
+  }
 ];
 
 export default function TeamPage() {

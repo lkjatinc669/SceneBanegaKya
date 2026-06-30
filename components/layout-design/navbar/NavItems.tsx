@@ -12,10 +12,10 @@ export interface NavItem {
 
 // 2. Define the strongly-typed navigation array
 const navItems: NavItem[] = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "HOME", href: "/" },
+  { name: "ABOUT", href: "/about" },
   { 
-    name: "Services", 
+    name: "SERVICES", 
     href: "/services", 
     subservices: [
       { name: "Graphic Design", href: "/services/graphic-design" },
@@ -26,9 +26,9 @@ const navItems: NavItem[] = [
       { name: "Digital Production", href: "/services/digital-production" },
     ]
   },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Team", href: "/team" },
-  { name: "Contact", href: "/contact" },
+  { name: "GALLERY", href: "/gallery" },
+  { name: "TEAM", href: "/team" },
+  { name: "CONTACT", href: "/contact" },
 ];
 
 export default navItems;

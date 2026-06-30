@@ -61,7 +61,7 @@ body {
 /* --- Typography --- */
 .font-heading { font-family: var(--font-heading); }
 .font-hindi { font-family: var(--font-hindi); }
-.font-main { font-family: var(--font-henny-penny); }
+.font-main { font-family: var(--font-poppins); }
 
 /* --- Theme-Aware Dynamic Utilities --- */
 

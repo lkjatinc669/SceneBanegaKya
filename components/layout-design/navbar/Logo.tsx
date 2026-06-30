@@ -1,41 +1,38 @@
 import React from 'react';
 
 interface SceneLogoProps {
-  /** The path or URL to your logo PNG file */
   logoSrc: string;
-  /** Optional custom alternative text for the logo image */
   logoAlt?: string;
-  /** Optional extra classes for the outer container */
   className?: string;
 }
 
 export const SceneLogo: React.FC<SceneLogoProps> = ({
-  logoSrc,
+  logoSrc ="/logo.svg",
   logoAlt = "Scene Logo Icon",
   className = ""
 }) => {
   return (
-    <div className={`flex items-center justify-baseline gap-6 rounded-2xl max-w-xl shadow-2xl ${className}`}>
+    <div className={`flex items-center gap-3 rounded-2xl max-w-xl ${className}`}>
       
       {/* Left Side: Logo Image Slot */}
       <div className="shrink-0 flex items-center">
         <img 
           src={logoSrc} 
           alt={logoAlt} 
-          className="w-20 h-auto object-contain" 
+          className="w-14 h-auto object-contain" 
         />
       </div>
 
       {/* Right Side: Dynamic Typography Container */}
-      <div className="flex flex-row items-baseline gap-3 font-sans">
+      <div className="flex flex-row items-baseline gap-2 font-sans">
         
         {/* Main Branding - SCENE (Orange) */}
-        <h1 className="text-[#e07a4f] font-medium text-5xl m-0 tracking-wide leading-none">
-          scene
+        <h1 className="text-[#e07a4f] font-bold text-3xl m-0 leading-none">
+          Scene
         </h1>
 
         {/* Hindi Subtitle - बनेगा क्या (White) */}
-        <p className="text-white font-semibold text-3xl m-0 tracking-normal opacity-95 leading-none">
+        <p className="text-white font-light text-xl m-0 opacity-95 leading-none">
           बनेगा क्या?
         </p>
       </div>

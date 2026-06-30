@@ -1,4 +1,4 @@
-import { Manrope, Mukta, Rozha_One, Henny_Penny } from "next/font/google";
+import { Manrope, Mukta, Rozha_One, Henny_Penny, Poppins } from "next/font/google";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -23,4 +23,10 @@ const hennyPenny = Henny_Penny({
   variable: "--font-henny-penny",
 });
 
-export { manrope, mukta, rozha, hennyPenny };
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
+
+export { manrope, mukta, rozha, hennyPenny, poppins };

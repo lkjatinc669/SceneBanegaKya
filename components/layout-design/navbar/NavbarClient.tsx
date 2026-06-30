@@ -31,8 +31,8 @@ export default function NavbarClient({ navItems, children }: NavbarClientProps) 
       <header
         className={`fixed top-0 z-50 w-full transition-all duration-300 ${
           scrolled
-            ? "border-b border-black/5 dark:border-white/5 bg-white/80 dark:bg-[#0D0D0D]/80 backdrop-blur-md py-2"
-            : "bg-transparent py-4"
+            ? "border-b border-black/5 dark:border-white bg-white/80 dark:bg-[#0D0D0D]/80 backdrop-blur-md py-2"
+            : "bg-transparent py-2"
         }`}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
