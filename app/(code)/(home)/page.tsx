@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="relative bg-background min-h-screen text-foreground antialiased selection:bg-primary selection:text-primary-foreground">
       <HomeHero />
-      <TrustedClients />
+      {/* <TrustedClients /> */}
       <AboutPreview />
       <FeaturedServices />
       <PortfolioPreview />
