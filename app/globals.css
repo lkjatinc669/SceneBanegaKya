@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds & Base */
+  --background: #fdffa0;          /* Warm raw paper/canvas */
+  --foreground: #1a1816;          /* Deep industrial charcoal */
+  /* Brand / Accent (Utilitarian Industrial Orange) */
+  --primary: #d96a21;             /* Slightly punchier for contrast */
+  --primary-foreground: #ffffff;  /* Crisp white for clean readability */
+  /* Secondary (Cards, Grouping elements) */
+  --secondary: #eee4d7;           /* Noticeable depth change from background */
+  --secondary-foreground: #3a312a;/* Clear readability on secondary elements */
+  /* Muted (Disabled states, structural placeholders, hints) */
+  --muted: #e6dacb;               
+  --muted-foreground: #665649;    /* Darkened to pass WCAG AA compliance */
+  /* Structural Dividers */
+  --border: #cfbeab;              /* Sharp, defined structural lines */
+}
+
+.dark {
+  /* Backgrounds & Base */
+  --background: #0d0d0d;          /* Pure, deep obsidian black */
+  --foreground: #f4eee6;          /* Soft stark off-white */
+  /* Brand / Accent */
+  --primary: #e58a42;             /* Glowing raw amber/orange */
+  --primary-foreground: #0d0d0d;  /* Stark black text on top of the glowing orange */
+  /* Secondary */
+  --secondary: #1a1a1a;           /* Clean, elevated surface */
+  --secondary-foreground: #e3d9cd;
+  /* Muted */
+  --muted: #262626;               
+  --muted-foreground: #998a7c;    /* Increased contrast for metadata/labels */
+  /* Structural Dividers */
+  --border: #2d2d2d;              /* Subtle but crisp grid lines */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+}
+
+/* English Utilities */
+.font-english-heading {
+  font-family: var(--font-english), sans-serif;
+  font-weight: 700;             /* Headings should default to bold */
+  letter-spacing: -0.025em;     /* "tracking-tight" looks incredible on Manrope */
+}
+
+.font-english-body {
+  font-family: var(--font-english), sans-serif;
+  font-weight: 400;             /* Standard reading weight */
+  line-height: 1.6;             /* Balanced line-height for body readability */
+}
+
+/* Hindi Utilities */
+.font-hindi-heading {
+  font-family: var(--font-hindi), sans-serif;
+  font-weight: 700;             /* Clear structural emphasis */
+  letter-spacing: 0;            /* Devanagari script shouldn't be tightened */
+}
+
+.font-hindi-body {
+  font-family: var(--font-hindi), sans-serif;
+  font-weight: 400;
+  line-height: 1.7;             /* Devanagari script complex glyphs need slightly more vertical breathing room */
+}
+
+
+*{
+  transition-property: border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms; /* 0.5s fade window */
+}
